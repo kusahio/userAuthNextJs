@@ -62,7 +62,7 @@ export async function registerUser(prevState: Formstate, formData: FormData): Pr
 export async function loginUser(prevState: Formstate, formData: FormData): Promise<Formstate> {
 
     const fields = {
-        email: formData.get('email') as string,
+        identifier: formData.get('email') as string,
         password: formData.get('password') as string,
     }
 

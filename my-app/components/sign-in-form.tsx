@@ -56,7 +56,7 @@ export function SignInForm() {
           <CardContent className={styles.content}>
             <div>
               <Label htmlFor="email" className={styles.label}>Email</Label>
-              <Input type="email" name="email" id="email" className={styles.input} defaultValue={formState.data?.email ?? ''}/>
+              <Input type="email" name="email" id="email" className={styles.input} defaultValue={formState.data?.identifier ?? ''}/>
               <FormError error={formState.zodErrors?.identifier} />
             </div>
             <div>

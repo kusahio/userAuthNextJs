@@ -1,5 +1,4 @@
 import qs from 'qs'
-import { tr } from 'zod/locales'
 
 export const BASE_URL = 'http://localhost:1337'
 
@@ -69,7 +68,7 @@ export async function loginUserService(userData: object){
 
 	try {
 		const res = await fetch(url, {
-			method: 'GET',
+			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
 			},
