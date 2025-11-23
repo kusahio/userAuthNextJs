@@ -62,7 +62,7 @@ export async function registerUser(prevState: Formstate, formData: FormData): Pr
 export async function loginUser(prevState: Formstate, formData: FormData): Promise<Formstate> {
 
     const fields = {
-        identifier: formData.get('email') as string,
+        email: formData.get('email') as string,
         password: formData.get('password') as string,
     }
 
@@ -84,7 +84,6 @@ export async function loginUser(prevState: Formstate, formData: FormData): Promi
             },
         };
     }
-
     const response = await loginUserService(validateFields.data);
 
     if (!response || response.error) {

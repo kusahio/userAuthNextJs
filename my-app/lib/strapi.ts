@@ -69,7 +69,7 @@ export async function loginUserService(userData: object){
 
 	try {
 		const res = await fetch(url, {
-			method: 'POST',
+			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
 			},
